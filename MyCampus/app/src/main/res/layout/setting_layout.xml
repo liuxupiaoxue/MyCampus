@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMyAPP">
+        <RadioGroup
+            android:id="@+id/set_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <com.android.liuxu.mycampus.view.MyRadioButton
+                android:id="@+id/set_btn1"
+                android:checked="true"
+                android:paddingLeft="0dp"
+                android:button="@null"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_setting_btn"
+                android:text="联系人"/>
+
+            <com.android.liuxu.mycampus.view.MyRadioButton
+                android:id="@+id/set_btn2"
+                android:button="@null"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/bg_setting_btn_right"
+                android:text="修改"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/set_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+</LinearLayout>

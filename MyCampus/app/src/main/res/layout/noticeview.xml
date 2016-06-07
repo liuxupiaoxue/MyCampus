@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/noview_iv"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/teacher"/>
+
+    <TextView
+        android:id="@+id/noview_bief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/noview_iv"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/noview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:lines="2"
+        android:layout_toRightOf="@id/noview_iv"
+        android:layout_below="@id/noview_bief"/>
+
+
+</RelativeLayout>
+
